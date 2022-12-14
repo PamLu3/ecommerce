@@ -16,8 +16,9 @@
 		<div class="wrapper">
 			<!-- Navigation Menu Button -->
 			<button class="munuIcon">
-				<img src="./assets/menu-button.svg" alt="Button to open our navigation">
+				<img src="./assets/menu-button.svg" alt="Button to open our navigation" class="menuIcon">
 			</button>
+
 			<!-- Home Button/Logo -->
 			<a href="./index.html" class="logo">
 				<h1>Toybox</h1>
@@ -38,15 +39,32 @@
 				<div class="counter">
 					<p>0</p>
 				</div>	<!-- .counter END -->
-
 			</div>  <!-- .searchCart END -->
 		</div>	<!-- .wrapper END -->
+
 		<!-- WE STILL NEED TO ADD THE CONTENT FOR OUR SLIDE OUT NAV -->
+		<div class="slideOutNav">
+			<!-- Our Menu CLOSE button -->
+			<div class="buttonContainer">
+				<!-- We are making this div .buttonContainer so we can flex it and position our button to the right. -->
+				<button>
+					<img src="./assets/menu-close.svg" alt="Close Button for our Slide-Out Nav">
+				</button>
+			</div>
+			<!-- Our UL to hold our menu items -->
+			<ul class="mainMenu">
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">NEWS</a></li>
+				<li><a href="./contact.html">Contact</a></li>
+			</ul>
+		</div>
 	</nav>
 	<!-- Our Header !!! -->
 	<header>
 		<div class="wrapper headerImgContainer">
-			<img src="./assets/header-image.jpg" alt="A toddle playin with wooden blocks">
+			<img src="./assets/header-image.jpg" alt="A toddle playing with wooden blocks">
 		</div>
 		<div class="wrapper headerContent">
 			<h5>Handcrafted for kids</h5>
@@ -65,13 +83,15 @@
 
 				<!-- Our Gallery -->
 				<ul class="categoryGallery">
+
 					<li class="items item1">
 						<a href="#">
 							<img src="./assets/safari-trio.jpg" alt="hand carved safari animal toys">
 							<h4>Safari</h4>
-							<p>Land-dwelling African favourites</p>
+							<p>Land-dwelling African favorites</p>
 						</a>
 					</li>
+
 					<li class="items item2">
 						<a href="#">
 							<img src="./assets/ocean-trio.jpg" alt="A collection of ocean-themed animal toys">
@@ -79,6 +99,7 @@
 							<p>Adorable Aquatic Characters</p>
 						</a>
 					</li>
+
 					<li class="items item3">
 						<a href="#">
 							<img src="./assets/dino-trio.jpg" alt="Hand-carved dinosaur toys for kids">
@@ -86,6 +107,7 @@
 							<p>Meet these Prehistoric Pals</p>
 						</a>
 					</li>
+
 					<li class="items item4">
 						<a href="#">
 							<img src="./assets/sale.jpg" alt="A toddler pulling two wooden animals on wheels">
@@ -93,6 +115,7 @@
 							<p>Act quickly and grab these bargains</p>
 						</a>
 					</li>
+
 				</ul>
 			</div>
 		</section>
@@ -106,7 +129,80 @@
 				<a href="#" class="solid">Learn About Us</a>
 			</div>
 		</section>
-		<!-- Footer Section -->
+		
 	</main>
+
+	<!-- Footer Section -->
+	<footer class="footer" id="footer">
+		<div class="wrapper">
+			<div class="footerFlex">
+				<!-- Flex Item 1 - LOGO -->
+				<a href="./index.html" class="logo">
+					<h4>Toybox</h4>
+				</a>
+
+				<!-- Flex Item 2 - Footer Menu -->
+				
+				<nav class="footerNav">
+					<!-- List 1 - SHOP -->
+					<ul class="forterShop">
+						<li>
+							<h5>Shop</h5>
+						</li>
+						<li>
+							<a href="#">Safari</a>
+						</li>
+						<li>
+							<a href="#">Ocean</a>
+						</li>
+						<li>
+							<a href="#">Dinos</a>
+						</li>
+						<li>
+							<a href="#">Sale</a>
+						</li>
+					</ul>
+					<!-- List 2 - ABOUT -->
+					<ul class="footerAbout">
+						<li>
+							<h5>About</h5>
+						</li>
+						<li>
+							<a href="#">About Us</a>
+						</li>
+						<li>
+							<a href="#">FAQ</a>
+						</li>
+						<li>
+							<a href="#">Legal</a>
+						</li>
+						<li>
+							<a href="#">News</a></li>
+						<li>
+							<a href="./contact.html">Contact</a>
+						</li>
+					</ul>
+	
+					<!-- List 3 - TEMPLATE -->
+					<ul class="footerTemp">
+						<li>
+							<h5>Template</h5>
+						</li>
+						<li>
+							<a href="#">Style Guide</a>
+						</li>
+						<li>
+							<a href="#">Licenses</a>
+						</li>
+						<li>
+							<a href="#">Changelog</a>
+						</li>
+					</ul>
+				</nav>					
+			</div>
+		</div>
+	</footer>
+
+
 </body>
 </html>
