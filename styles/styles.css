@@ -226,6 +226,11 @@ html {
   overflow: hidden;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 /* site fonts */
 /* site colours */
 /* site fonts */
@@ -423,4 +428,108 @@ a.button:focus {
 }
 .skipLink:focus {
   left: 0;
+}
+
+.navBar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid rgba(8, 75, 109, 0.08);
+  background-color: #fff;
+}
+.navBar .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+.searchCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+.counter p {
+  background-color: #084b6d;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.slideOutNav {
+  height: 100vh;
+  z-index: 20;
+  background-color: #084b6d;
+  color: #fff;
+  width: 100%;
+  max-width: 500px;
+  position: fixed;
+  top: 0;
+  left: -500px;
+  padding: 35px 50px;
+}
+
+.footer {
+  background-color: #084b6d;
+  color: #fff;
+  padding: 90px 0 50px;
+}
+.footer .footerFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer .footerNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer .footerNav a {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer .footerNav a:hover, .footer .footerNav a:focus {
+  color: white;
+}
+
+header {
+  background-color: #f8fbf3;
+  margin-bottom: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+header .headerImgContainer {
+  width: 45%;
+}
+header .headerContent {
+  width: 55%;
+  color: #084b6d;
+}
+header .headerContent .contentContainer {
+  width: 65%;
+  margin: 0 auto;
 }
